@@ -25,7 +25,7 @@ elif [[ ! -d $RENDER_FOLDER ]]; then
 fi
 
 # run blender in the background, passing in output paths and other variables
-/Applications/Blender.app/Contents/MacOS/blender --background --python $PYTHON_SCRIPT --  --OUTPUT_PATH="$OUTPUT_PATH" --RENDER_PATH="$RENDER_PATH_STEM"
+/Applications/Blender.app/Contents/MacOS/blender --background --python $PYTHON_SCRIPT --  --OUTPUT_PATH="$OUTPUT_PATH" --RENDER_PATH="$RENDER_PATH_STEM" --FINNHUB_APIKEY=$FINNHUB_APIKEY
 
 # open file if desired
 open -a "/Applications/Blender.app" "$OUTPUT_PATH"

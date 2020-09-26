@@ -23,5 +23,9 @@ def parse(argv):
         "--RENDER_PATH", dest="RENDER_PATH", type=str, required=True,
         help="This text will be used to define the render path",
     )
+    parser.add_argument(
+        "--FINNHUB_APIKEY", dest="FINNHUB_APIKEY", type=str, required=True,
+        help="This text will be used to define the render path",
+    )
     args = parser.parse_args(argv)
     return args

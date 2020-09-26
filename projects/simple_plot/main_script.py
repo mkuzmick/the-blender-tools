@@ -16,7 +16,7 @@ def main():
     # point_objects=[]
     # for i, point in enumerate(data):
     #     point_objects.append(plot_xy.Sphere(f'point-{i}-x-{point["x"]}-y-{point["y"]}', point["x"], point["y"], 0, .5))
-    requests_test.get_stock_data()
+    requests_test.get_stock_data("AAPL", the_args.FINNHUB_APIKEY)
 
     bpy.ops.wm.save_as_mainfile(filepath=the_args.OUTPUT_PATH)
 
