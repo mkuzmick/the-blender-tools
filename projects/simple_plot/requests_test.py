@@ -28,7 +28,7 @@ class Candle:
         self.candle_object.modifiers["Bevel"].width = 0.02
         self.wick_object.scale = (0.01, 0.01, self.wick_height)
         self.candle_object.location[0] = item_number*.1
-        self.wick_object.location[0] = item_number*.1
+        self.wick_object.location[0] = item_number*.1 
         self.candle_object.location[2] = open + self.candle_height/2
         self.wick_object.location[2] = low + self.wick_height/2
 
